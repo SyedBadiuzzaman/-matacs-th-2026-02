@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Triage Prototype</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Proposal Triage Prototype</h1>
+
+        <p class="subtitle">
+            Click a proposal to check it against the sample Commercial Solar Installation rules.
+        </p>
+
+        <div class="button-row">
+            <button class="proposal-btn" data-id="A">Proposal A</button>
+            <button class="proposal-btn" data-id="B">Proposal B</button>
+            <button class="proposal-btn" data-id="C">Proposal C</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <section id="result-card" class="result-card" hidden>
+            <h2 id="company-title"></h2>
+
+            <div id="badges" class="badges"></div>
+
+            <h3>Reason</h3>
+            <p id="reason"></p>
+
+            <button id="download-json" class="download-btn">
+                Download JSON
+            </button>
+
+            <h3>JSON Output</h3>
+            <pre id="json-output"></pre>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
